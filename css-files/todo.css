@@ -1,0 +1,79 @@
+.todo-container {
+    background-color: #929292;
+    color: #fff;
+    min-height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+}
+
+#input-el {
+    padding: 12px 25px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+#add-btn {
+    padding: 12px 25px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+#todo-ul {
+    list-style: none;
+}
+#todo-ul li {
+    width: 900px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    box-shadow: 1px 2px 3px 4px gray;
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+#todo-ul li button {
+    padding: 12px 24px;
+    background: transparent;
+    margin: 20px;
+    /* border: 1px solid gray; */
+    width: 150px;
+    color: #fff;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+hr {
+    width: 100%;
+    height: 3px;
+    margin: 20px 0px;
+    background-color: #929292;
+    /* box-shadow: 0px 1px 3px 3px gray; */
+}
+#todo-ul li button:hover {
+    /* box-shadow: 1px 1px 1px 2px gray; */
+    border: 1px solid gray;
+}
+.newLi {
+    width: 100%;
+    background-color: #929292;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.newLi .textDiv {
+    display: flex;
+    width: 300px;
+    text-align: left;
+    margin-left: 10px;
+}
+.newLi .liRight {
+    display: flex;
+    justify-content: flex-end;
+}

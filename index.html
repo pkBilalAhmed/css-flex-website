@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css" />
-    <link rel="stylesheet" href="top-header.css" />
-    <link rel="stylesheet" href="menu-bar.css">
-    <link rel="stylesheet" href="content.css">
-    <link rel="stylesheet" href="footer.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha384-rzjGlGfXFD5Pc1NcLZs6KbKAYoN5RxzDlyFgHxSAqPIqM3nH/59&"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="top-header">
-        <div class="header-left header-items"><h2 class="title">WP GOOD WEBS</h2></div>
-        <div class="header-right header-items">
-          <ul>
-            <li><a href="">Facebook </i></a></li>
-            <li><a href="">YT</a></li>
-            <li><a href="">WA</a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css-files/Style.css" />
+  <link rel="stylesheet" href="./css-files/top-header.css" />
+  <link rel="stylesheet" href="./css-files/menu-bar.css">
+  <link rel="stylesheet" href="./css-files/content.css">
+  <link rel="stylesheet" href="./css-files/footer.css">
+  <link rel="stylesheet" href="./css-files/todo.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-rzjGlGfXFD5Pc1NcLZs6KbKAYoN5RxzDlyFgHxSAqPIqM3nH/59&" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="top-header">
+      <div class="header-left header-items">
+        <h2 class="title">WP GOOD WEBS</h2>
       </div>
-      <div class="menu-bar">  
+      <div class="header-right header-items">
         <ul>
-          <li><a href="">Stop Watch</a></li>
-          <li><a href="">Todo App</a></li>
-          <li><a href="">Waither App</a></li>
-          <li><a href="">Analog clock</a></li>
-          <li><a href="">blog</a></li>
+          <li><a href="">Facebook </i></a></li>
+          <li><a href="">YT</a></li>
+          <li><a href="">WA</a></li>
         </ul>
-      </div>    
-      <section>
-        <div class="side-menu">
-          <ul> 
-            <li><a href="">html</a></li>
-            <li><a href="">css</a></li>
-            <li><a href="">tailwind-css</a></li>
-            <li><a href="">javascript</a></li>
-            <li><a href="">React-js</a></li>
-            <li><a href="">node-js</a></li>
-            <li><a href="">express-js</a></li>
-            <li><a href="">mogo-db</a></li>
-            <li><a href="">Pythone</a></li>
-            <li><a href="">data-scince</a></li>
-          </ul>
-        </div>
-        <div class="content-erea">
-          <div class="app-erea">
-              <h2>hello</h2>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="">Stop Watch</a></li>
+        <li><a href="">Todo App</a></li>
+        <li><a href="">Waither App</a></li>
+        <li><a href="">Analog clock</a></li>
+        <li><a href="">blog</a></li>
+      </ul>
+    </div>
+    <section>
+      <div class="side-menu">
+        <ul>
+          <li><a href="">html</a></li>
+          <li><a href="">css</a></li>
+          <li><a href="">tailwind-css</a></li>
+          <li><a href="">javascript</a></li>
+          <li><a href="">React-js</a></li>
+          <li><a href="">node-js</a></li>
+          <li><a href="">express-js</a></li>
+          <li><a href="">mogo-db</a></li>
+          <li><a href="">Pythone</a></li>
+          <li><a href="">data-scince</a></li>
+        </ul>
+      </div>
+      <div class="content-erea">
+        <div class="apps-erea">
+          <div class="todo-container">
+            <div id="input-container">
+              <input type="text" name="name" id="input-el" placeholder="Add item ">
+              <button id="add-btn">Add Item</button>
+            </div>
+            <hr/>
+            <ul id="todo-ul">              
+            </ul>
           </div>
         </div>
-      </section>
-      <footer>
-        <h3>wp good webs</h3>
-        <p>@copyright wp good webs</p>
+      </div>
+    </section>
+    <footer>
+      <h3>wp good webs</h3>
+      <p>@copyright wp good webs</p>
 
-      </footer>
-    </div>
-  </body>
+    </footer>
+  </div>
+  <script src="./scriptFiles/todoApp.js"></script>
+</body>
+
 </html>

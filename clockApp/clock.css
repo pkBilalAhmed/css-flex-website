@@ -10,13 +10,40 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #333;
-    color: #fff;
+    /* background-color: #909090; */
 }
 
 .clock-container {
-    height: 500px;
     width: 500px;
-    background-color: #444;
+    height: 500px;
+    background-color: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 19px;
+    font-size: 25px;
+}
+
+.items>b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
+.clock-container::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: blue;
+    position: absolute;
     border-radius: 50%;
 }
